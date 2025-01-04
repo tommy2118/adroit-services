@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adroit Services - Premier General Contractor in Crestwood, KY</title>
 
+    <!-- Animate.css for smooth animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="Top-rated general contractor in Crestwood, KY. Specializing in home renovations, custom carpentry, and kitchen & bath remodeling. Quality craftsmanship guaranteed.">
     <meta name="keywords" content="general contractor, home renovation, custom carpentry, kitchen remodeling, bathroom remodeling, Crestwood KY, construction services">
@@ -15,6 +18,7 @@
     <meta property="og:title" content="Adroit Services - Premier General Contractor in Crestwood, KY">
     <meta property="og:description" content="Top-rated general contractor in Crestwood, KY. Specializing in home renovations, custom carpentry, and kitchen & bath remodeling.">
     <meta property="og:image" content="https://adroit-services.com/og-image.jpg">
+    <meta property="og:email" content="adroit1services@gmail.com">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -109,6 +113,57 @@
       }
     }
     </script>
+    <style>
+        .diagonal-lines {
+            background-image: linear-gradient(45deg, #E31837 25%, transparent 25%),
+                            linear-gradient(-45deg, #E31837 25%, transparent 25%);
+            background-size: 4px 4px;
+            opacity: 0.1;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .tool-pattern {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #E31837;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.1;
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+
+        .animated-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #E31837;
+            transition: width 0.3s ease;
+        }
+
+        .animated-border:hover::after {
+            width: 100%;
+        }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -162,17 +217,33 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="relative bg-milwaukee-black text-white">
-        <div class="absolute inset-0 bg-[url('public/images/kitchen.jpg')] opacity-50 bg-cover bg-center"></div>
+    <div class="relative bg-milwaukee-black text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="public/images/kitchen.jpg" alt="Modern Kitchen Renovation" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="absolute inset-0 diagonal-lines"></div>
         <div class="relative max-w-7xl mx-auto px-4 py-32">
             <div class="max-w-3xl">
-                <h1 class="text-5xl font-bold mb-6 leading-tight">BUILT TO <span class="text-milwaukee-red">OUTPERFORM</span></h1>
-                <p class="text-xl mb-8 text-gray-300">Premium construction and renovation services in Crestwood, KY</p>
-                <a href="#contact" class="bg-milwaukee-red text-white px-8 py-4 rounded inline-block font-bold hover:bg-red-700 transition-colors">
-                    GET YOUR QUOTE
-                </a>
+                <h1 class="text-5xl font-bold mb-6 leading-tight animate__animated animate__fadeInDown">
+                    BUILT TO <span class="text-milwaukee-red">OUTPERFORM</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    Premium construction and renovation services in Crestwood, KY
+                </p>
+                <div class="flex gap-4 animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="#contact" class="bg-milwaukee-red text-white px-8 py-4 rounded inline-block font-bold hover:bg-red-700 transition-colors hover-lift">
+                        GET YOUR QUOTE
+                    </a>
+                    <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded inline-block font-bold hover:bg-white hover:text-milwaukee-black transition-colors hover-lift">
+                        OUR SERVICES
+                    </a>
+                </div>
             </div>
         </div>
+        <!-- Decorative Elements -->
+        <div class="tool-pattern absolute top-20 right-20"></div>
+        <div class="tool-pattern absolute bottom-20 left-40"></div>
+        <div class="tool-pattern absolute top-40 right-1/4"></div>
     </div>
 
     <!-- Services Section -->
@@ -210,7 +281,7 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="md:flex items-center gap-16">
                 <div class="md:w-1/2 mb-12 md:mb-0">
-                    <img src="public/images/bathroom2.jpg" alt="modern bathroom" class="rounded-lg shadow-2xl w-full"
+                    <img src="public/images/bathroom2.jpg" alt="Luxury Bathroom Remodel" class="rounded-lg shadow-2xl w-full">
                 </div>
                 <div class="md:w-1/2">
                     <h2 class="text-4xl font-bold text-milwaukee-black mb-8">BUILT ON <span class="text-milwaukee-red">EXPERIENCE</span></h2>
@@ -266,6 +337,7 @@
                         <input type="hidden" name="access_key" value="9db3463c-ff5d-4484-b82c-b6e4ebfda722">
                         <input type="hidden" name="subject" value="New Contact Form Submission - Adroit Services">
                         <input type="hidden" name="from_name" value="Adroit Services Website">
+                        <input type="hidden" name="replyto" value="adroit1services@gmail.com">
                         <div>
                             <label for="name" class="block mb-2 text-lg">Name</label>
                             <input type="text" name="name" id="name" class="w-full p-3 bg-milwaukee-gray border-2 border-gray-600 rounded focus:border-milwaukee-red focus:outline-none text-white" required>
@@ -303,6 +375,43 @@
 
         // Update year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', entry.target.dataset.animation);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        // Observe elements with data-animation
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('[data-animation]').forEach((element) => {
+                observer.observe(element);
+            });
+        });
+
+        // Dynamic tool pattern generation
+        function createToolPatterns() {
+            const container = document.createElement('div');
+            container.className = 'fixed inset-0 pointer-events-none opacity-5';
+            container.style.zIndex = '-1';
+
+            for(let i = 0; i < 20; i++) {
+                const pattern = document.createElement('div');
+                pattern.className = 'tool-pattern';
+                pattern.style.left = `${Math.random() * 100}%`;
+                pattern.style.top = `${Math.random() * 100}%`;
+                container.appendChild(pattern);
+            }
+
+            document.body.appendChild(container);
+        }
+
+        createToolPatterns();
     </script>
 </body>
 </html>
