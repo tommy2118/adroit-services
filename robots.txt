@@ -1,0 +1,7 @@
+# robots.txt for https://adroit-services.com/
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://adroit-services.com/sitemap.xml
