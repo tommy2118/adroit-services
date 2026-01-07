@@ -1,0 +1,23 @@
+{
+  "name": "adroit-services",
+  "version": "1.0.0",
+  "description": "Premier General Contractor in Crestwood, KY",
+  "author": "Tommy A. Caruso Sr.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:11ty\" \"npm run dev:css\"",
+    "dev:11ty": "eleventy --serve --watch",
+    "dev:css": "tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --watch",
+    "build": "npm run build:css && npm run build:11ty",
+    "build:11ty": "eleventy",
+    "build:css": "tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --minify",
+    "preview": "npx serve _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "concurrently": "^9.1.0",
+    "tailwindcss": "^3.4.17"
+  }
+}
