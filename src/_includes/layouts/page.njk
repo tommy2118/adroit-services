@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+
+{% if breadcrumb %}
+{% include "partials/breadcrumb.njk" %}
+{% endif %}
+
+<div class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        {% if title %}
+        <h1 class="text-4xl font-bold text-milwaukee-black mb-8">{{ title }}</h1>
+        {% endif %}
+
+        {{ content | safe }}
+    </div>
+</div>
+
+{% include "partials/cta-banner.njk" %}

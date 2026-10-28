@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "modern-kitchen-transformation",
+    "title": "Modern Kitchen Transformation",
+    "client": "The Thompson Family",
+    "location": "Crestwood, KY",
+    "category": "kitchen",
+    "completionDate": "2024-10",
+    "description": "A complete kitchen overhaul featuring custom cabinetry, quartz countertops, and a stunning center island that transformed this dated space into a modern chef's dream.",
+    "challenge": "The original kitchen had limited counter space, poor lighting, and outdated appliances that made cooking a chore rather than a joy.",
+    "solution": "We reconfigured the layout to create an open concept design, installed custom soft-close cabinets, added under-cabinet LED lighting, and created a large center island with seating.",
+    "image": "/images/kitchen.webp"
+  },
+  {
+    "slug": "luxury-master-bathroom",
+    "title": "Luxury Master Bathroom",
+    "client": "The Johnson Family",
+    "location": "Louisville, KY",
+    "category": "bathroom",
+    "completionDate": "2024-08",
+    "description": "A spa-inspired master bathroom renovation featuring a walk-in shower, freestanding tub, and custom double vanity.",
+    "challenge": "The cramped, outdated bathroom needed a complete redesign to create a relaxing retreat within the existing footprint.",
+    "solution": "We removed the old tub/shower combo, installed a spacious walk-in shower with rainfall head, added a freestanding soaking tub, and built a custom double vanity with ample storage.",
+    "image": "/images/bathroom2.webp"
+  },
+  {
+    "slug": "whole-house-renovation",
+    "title": "Whole House Renovation",
+    "client": "The Chen Family",
+    "location": "Oldham County, KY",
+    "category": "renovation",
+    "completionDate": "2024-06",
+    "description": "A comprehensive whole-house renovation that modernized a 1980s home while preserving its character and charm.",
+    "challenge": "The home had good bones but needed updates throughout - from flooring and lighting to kitchen and bathrooms.",
+    "solution": "We developed a phased renovation plan that allowed the family to remain in the home while we transformed each area, completing the project on schedule and budget.",
+    "image": "/images/kitchen.webp"
+  }
+]

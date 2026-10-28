@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "home-renovations",
+    "title": "Home Renovations",
+    "shortDescription": "Complete home transformations with precision and power.",
+    "fullDescription": "From room additions to whole-house renovations, we deliver comprehensive remodeling solutions that transform your living space. Our team handles everything from structural modifications to finishing touches, ensuring a seamless renovation experience.",
+    "features": [
+      "Room additions and extensions",
+      "Open floor plan conversions",
+      "Structural modifications",
+      "Basement finishing",
+      "Whole-house remodels"
+    ],
+    "image": "/images/kitchen.webp",
+    "icon": "home"
+  },
+  {
+    "slug": "custom-carpentry",
+    "title": "Custom Carpentry",
+    "shortDescription": "Expert craftsmanship for your unique projects.",
+    "fullDescription": "Our skilled carpenters create custom woodwork that adds character and value to your home. From built-in cabinetry to crown molding, we bring your vision to life with precision and artistry.",
+    "features": [
+      "Built-in cabinetry and shelving",
+      "Crown molding and trim work",
+      "Custom staircases and railings",
+      "Hardwood flooring installation",
+      "Deck and patio construction"
+    ],
+    "image": "/images/kitchen.webp",
+    "icon": "hammer"
+  },
+  {
+    "slug": "kitchen-remodeling",
+    "title": "Kitchen Remodeling",
+    "shortDescription": "Modern designs with industrial-grade durability.",
+    "fullDescription": "Transform your kitchen into the heart of your home with our comprehensive remodeling services. We handle everything from cabinet installation to countertops, creating functional and beautiful spaces that stand the test of time.",
+    "features": [
+      "Cabinet design and installation",
+      "Countertop selection and fitting",
+      "Kitchen island construction",
+      "Appliance installation",
+      "Lighting and electrical updates"
+    ],
+    "image": "/images/kitchen.webp",
+    "icon": "utensils"
+  },
+  {
+    "slug": "bathroom-remodeling",
+    "title": "Bathroom Remodeling",
+    "shortDescription": "Luxurious bathrooms built to last.",
+    "fullDescription": "Create your personal retreat with our bathroom remodeling expertise. From powder rooms to master bathrooms, we deliver spa-like transformations with quality fixtures and expert craftsmanship.",
+    "features": [
+      "Shower and tub installation",
+      "Vanity and cabinet work",
+      "Tile and flooring",
+      "Plumbing fixture upgrades",
+      "Lighting and ventilation"
+    ],
+    "image": "/images/bathroom2.webp",
+    "icon": "bath"
+  }
+]

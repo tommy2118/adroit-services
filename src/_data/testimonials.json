@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Michael Thompson",
+    "location": "Crestwood, KY",
+    "text": "Adroit Services completely transformed our outdated kitchen into a modern masterpiece. The attention to detail was incredible, and they finished on time and within budget. Highly recommend!",
+    "rating": 5,
+    "project": "Kitchen Remodel",
+    "date": "2024-10"
+  },
+  {
+    "name": "Sarah Johnson",
+    "location": "Louisville, KY",
+    "text": "We hired Adroit for a whole-house renovation and couldn't be happier. Professional, communicative, and the craftsmanship is outstanding. Our home feels brand new.",
+    "rating": 5,
+    "project": "Home Renovation",
+    "date": "2024-08"
+  },
+  {
+    "name": "David & Lisa Chen",
+    "location": "Oldham County, KY",
+    "text": "The custom built-ins they created for our living room exceeded our expectations. True craftsmen who take pride in their work. We've already recommended them to our neighbors.",
+    "rating": 5,
+    "project": "Custom Carpentry",
+    "date": "2024-11"
+  }
+]

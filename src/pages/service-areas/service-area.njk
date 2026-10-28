@@ -1,0 +1,15 @@
+---
+pagination:
+  data: serviceAreas
+  size: 1
+  alias: area
+permalink: /service-areas/{{ area.slug }}/
+layout: layouts/service-area.njk
+breadcrumb:
+  - label: Service Areas
+    url: /service-areas/
+  - label: "{{ area.city }}, {{ area.state }}"
+eleventyComputed:
+  title: "{{ area.city }}, {{ area.state }} Contractor"
+  description: "{{ area.description }}"
+---

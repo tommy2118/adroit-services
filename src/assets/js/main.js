@@ -4,8 +4,17 @@ function toggleMenu() {
     menu.classList.toggle('hidden');
 }
 
-// Make toggleMenu available globally
+// Mobile submenu toggle
+function toggleSubmenu(button) {
+    const submenu = button.nextElementSibling;
+    const icon = button.querySelector('svg');
+    submenu.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+}
+
+// Make functions available globally
 window.toggleMenu = toggleMenu;
+window.toggleSubmenu = toggleSubmenu;
 
 // Intersection Observer for scroll animations
 const observer = new IntersectionObserver((entries) => {

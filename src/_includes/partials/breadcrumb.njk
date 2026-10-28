@@ -1,0 +1,21 @@
+<nav aria-label="Breadcrumb" class="bg-gray-100 py-4">
+    <div class="max-w-7xl mx-auto px-4">
+        <ol class="flex items-center space-x-2 text-sm">
+            <li>
+                <a href="/" class="text-gray-600 hover:text-milwaukee-red transition-colors">Home</a>
+            </li>
+            {% for crumb in breadcrumb %}
+            <li class="flex items-center">
+                <svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                {% if crumb.url %}
+                <a href="{{ crumb.url }}" class="text-gray-600 hover:text-milwaukee-red transition-colors">{{ crumb.label }}</a>
+                {% else %}
+                <span class="text-milwaukee-black font-medium">{{ crumb.label }}</span>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+</nav>

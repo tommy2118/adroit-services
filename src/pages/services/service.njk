@@ -1,0 +1,15 @@
+---
+pagination:
+  data: services
+  size: 1
+  alias: service
+permalink: /services/{{ service.slug }}/
+layout: layouts/service.njk
+breadcrumb:
+  - label: Services
+    url: /services/
+  - label: "{{ service.title }}"
+eleventyComputed:
+  title: "{{ service.title }}"
+  description: "{{ service.fullDescription | truncate(160) }}"
+---

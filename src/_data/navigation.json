@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "label": "Services",
+      "url": "/services/",
+      "children": [
+        { "label": "Home Renovations", "url": "/services/home-renovations/" },
+        { "label": "Custom Carpentry", "url": "/services/custom-carpentry/" },
+        { "label": "Kitchen Remodeling", "url": "/services/kitchen-remodeling/" },
+        { "label": "Bathroom Remodeling", "url": "/services/bathroom-remodeling/" }
+      ]
+    },
+    { "label": "Portfolio", "url": "/portfolio/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Service Areas", "url": "/service-areas/" },
+    { "label": "Blog", "url": "/blog/" },
+    { "label": "Contact", "url": "/#contact" }
+  ]
+}

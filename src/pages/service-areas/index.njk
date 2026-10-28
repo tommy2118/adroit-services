@@ -1,0 +1,36 @@
+---
+layout: layouts/page.njk
+title: Service Areas
+permalink: /service-areas/
+description: Adroit Services proudly serves Crestwood, Louisville, Oldham County, and surrounding Kentucky communities with quality home renovation and construction services.
+breadcrumb:
+  - label: Service Areas
+---
+
+<p class="text-xl text-gray-600 mb-12 max-w-3xl">We're proud to serve homeowners throughout the Louisville metro area and surrounding Kentucky communities. Find your area below to learn more about our local services.</p>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for area in serviceAreas %}
+    <a href="/service-areas/{{ area.slug }}/" class="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="p-6">
+            <div class="flex items-center mb-3">
+                <svg class="w-6 h-6 text-milwaukee-red mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <h2 class="text-xl font-bold text-milwaukee-black group-hover:text-milwaukee-red transition-colors">{{ area.city }}, {{ area.state }}</h2>
+            </div>
+            <p class="text-gray-500 text-sm mb-3">{{ area.county }}</p>
+            <p class="text-gray-600 text-sm line-clamp-2">{{ area.description | truncate(100) }}</p>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<div class="mt-16 bg-gray-100 rounded-lg p-8 text-center">
+    <h2 class="text-2xl font-bold text-milwaukee-black mb-4">Don't See Your Area?</h2>
+    <p class="text-gray-600 mb-6">We may still be able to help! Contact us to discuss your project location.</p>
+    <a href="/#contact" class="bg-milwaukee-red text-white px-8 py-4 rounded font-bold hover:bg-red-700 transition-colors inline-block">
+        CONTACT US
+    </a>
+</div>

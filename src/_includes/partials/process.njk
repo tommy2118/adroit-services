@@ -1,0 +1,47 @@
+<div class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-milwaukee-black mb-4 text-center">HOW WE WORK</h2>
+        <p class="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">Our proven process ensures your project runs smoothly from start to finish.</p>
+
+        <!-- Desktop Timeline -->
+        <div class="hidden md:block">
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute top-8 left-0 right-0 h-1 bg-gray-200">
+                    <div class="absolute inset-0 bg-milwaukee-red" style="width: 100%;"></div>
+                </div>
+
+                <!-- Steps -->
+                <div class="grid grid-cols-5 gap-4 relative">
+                    {% for step in process %}
+                    <div class="text-center">
+                        <!-- Step Number Circle -->
+                        <div class="w-16 h-16 mx-auto bg-milwaukee-red text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 relative z-10">
+                            {{ step.step }}
+                        </div>
+                        <h3 class="font-bold text-milwaukee-black mb-2">{{ step.title }}</h3>
+                        <p class="text-sm text-gray-600">{{ step.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Timeline -->
+        <div class="md:hidden space-y-8">
+            {% for step in process %}
+            <div class="flex items-start">
+                <!-- Step Number -->
+                <div class="w-12 h-12 flex-shrink-0 bg-milwaukee-red text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                    {{ step.step }}
+                </div>
+                <!-- Content -->
+                <div class="flex-1">
+                    <h3 class="font-bold text-milwaukee-black mb-1">{{ step.title }}</h3>
+                    <p class="text-gray-600">{{ step.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

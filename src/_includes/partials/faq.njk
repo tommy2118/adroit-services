@@ -1,0 +1,42 @@
+<div class="py-24 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-milwaukee-black mb-4 text-center">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="text-lg text-gray-600 text-center mb-12">Have questions? We've got answers.</p>
+
+        <div class="space-y-4">
+            {% for item in faq %}
+            <details class="group bg-white rounded-lg shadow-md">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <span class="font-bold text-milwaukee-black pr-4">{{ item.question }}</span>
+                    <svg class="w-5 h-5 text-milwaukee-red flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </summary>
+                <div class="px-6 pb-6 text-gray-700">
+                    {{ item.answer }}
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in faq %}
+    {
+      "@type": "Question",
+      "name": "{{ item.question }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ item.answer }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

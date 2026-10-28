@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "crestwood-ky",
+    "city": "Crestwood",
+    "state": "KY",
+    "county": "Oldham County",
+    "zip": "40014",
+    "latitude": "38.3242",
+    "longitude": "-85.4747",
+    "description": "Premier general contractor proudly serving Crestwood, Kentucky. Our home base - where quality craftsmanship meets small-town values. From kitchen remodels to whole-house renovations, we're your trusted local contractor.",
+    "nearbyAreas": ["Pewee Valley", "La Grange", "Prospect", "Goshen"]
+  },
+  {
+    "slug": "louisville-ky",
+    "city": "Louisville",
+    "state": "KY",
+    "county": "Jefferson County",
+    "zip": "40202",
+    "latitude": "38.2527",
+    "longitude": "-85.7585",
+    "description": "Serving Louisville and the greater metro area with expert home renovation and construction services. From the Highlands to St. Matthews, we bring quality craftsmanship to Kentucky's largest city.",
+    "nearbyAreas": ["St. Matthews", "Jeffersontown", "Middletown", "Lyndon"]
+  },
+  {
+    "slug": "oldham-county-ky",
+    "city": "Oldham County",
+    "state": "KY",
+    "county": "Oldham County",
+    "zip": "40014",
+    "latitude": "38.4000",
+    "longitude": "-85.4500",
+    "description": "Your trusted contractor for all of Oldham County, Kentucky. We serve La Grange, Crestwood, Pewee Valley, Goshen, and surrounding communities with quality home renovation services.",
+    "nearbyAreas": ["La Grange", "Crestwood", "Pewee Valley", "Goshen", "Buckner"]
+  },
+  {
+    "slug": "prospect-ky",
+    "city": "Prospect",
+    "state": "KY",
+    "county": "Oldham County",
+    "zip": "40059",
+    "latitude": "38.3478",
+    "longitude": "-85.6158",
+    "description": "Quality home renovation and construction services for Prospect, Kentucky homeowners. Serving one of Louisville's most prestigious communities with the craftsmanship it deserves.",
+    "nearbyAreas": ["Glenview", "Indian Hills", "Anchorage", "Harrods Creek"]
+  },
+  {
+    "slug": "la-grange-ky",
+    "city": "La Grange",
+    "state": "KY",
+    "county": "Oldham County",
+    "zip": "40031",
+    "latitude": "38.4078",
+    "longitude": "-85.3786",
+    "description": "Trusted home renovation contractor serving La Grange, Kentucky - the heart of Oldham County. From historic home updates to modern kitchen remodels, we deliver quality results.",
+    "nearbyAreas": ["Crestwood", "Pewee Valley", "Buckner", "Westport"]
+  }
+]

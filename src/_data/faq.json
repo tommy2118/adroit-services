@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What areas do you serve?",
+    "answer": "We serve Crestwood, Louisville, Oldham County, and the surrounding areas in Kentucky. Our service radius extends approximately 30 miles from Crestwood.",
+    "category": "general"
+  },
+  {
+    "question": "How long does a typical kitchen remodel take?",
+    "answer": "Most kitchen remodels take 4-8 weeks depending on the scope of work. A minor refresh might take 2-3 weeks, while a complete gut renovation could take 8-12 weeks. We'll provide a detailed timeline during your consultation.",
+    "category": "services"
+  },
+  {
+    "question": "Do you offer free estimates?",
+    "answer": "Yes! We offer free, no-obligation consultations and estimates for all projects. Contact us to schedule your free consultation.",
+    "category": "pricing"
+  },
+  {
+    "question": "Are you licensed and insured?",
+    "answer": "Absolutely. We are fully licensed and insured in the state of Kentucky. We're happy to provide proof of insurance upon request.",
+    "category": "general"
+  },
+  {
+    "question": "What is your payment structure?",
+    "answer": "We typically require a deposit to secure your project date, with progress payments throughout the project. Final payment is due upon completion and your satisfaction. We accept checks, credit cards, and financing options.",
+    "category": "pricing"
+  },
+  {
+    "question": "Do you handle permits?",
+    "answer": "Yes, we handle all necessary permits for your project. Permit costs are included in our estimates, and we ensure all work meets local building codes.",
+    "category": "services"
+  }
+]

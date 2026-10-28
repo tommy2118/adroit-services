@@ -1,0 +1,27 @@
+[
+  {
+    "step": 1,
+    "title": "Free Consultation",
+    "description": "We discuss your project goals, vision, and budget to understand exactly what you need."
+  },
+  {
+    "step": 2,
+    "title": "Detailed Estimate",
+    "description": "Receive a transparent, itemized quote with no hidden costs or surprise fees."
+  },
+  {
+    "step": 3,
+    "title": "Project Planning",
+    "description": "We create a detailed timeline and help you select materials that fit your style and budget."
+  },
+  {
+    "step": 4,
+    "title": "Expert Execution",
+    "description": "Our skilled team brings your vision to life with quality craftsmanship and attention to detail."
+  },
+  {
+    "step": 5,
+    "title": "Final Walkthrough",
+    "description": "We review every detail together to ensure your complete satisfaction before project completion."
+  }
+]
